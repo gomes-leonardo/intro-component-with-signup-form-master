@@ -10,7 +10,7 @@ const submit = document.querySelector('button')
 const iconError = document.querySelector('.error')
 const errorTwo = document.querySelector('.error-two')
 const errorThree = document.querySelector('.error-three')
-const errorFourth = document.querySelector('.error-fourth')
+const errorFour = document.querySelector('.error-four')
 
 const spanError = document.querySelector('.span-error')
 const spanErrorSecond = document.querySelector('.span-error-second')
@@ -82,13 +82,13 @@ function validatePassword() {
 
     if (password.value.length < 6) {
         spanErrorFourth.style.opacity = 1
-        spanErrorFourth.style.opacity = 1
+        errorFour.style.opacity = 1
         password.style.border = '1px solid #e63636'
     }
 
     else {
         spanErrorFourth.style.opacity = -1
-        spanErrorFourth.style.opacity = -1
+        errorFour.style.opacity = -1
         password.style.border = ''
     }
 }
