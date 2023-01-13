@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrapper">
+    <div class="txt-container">
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+
+    <div class="form-container">
+
+      <div class="try"><span class="strong">Try it free 7 days</span> then $20/mo. thereafter</div>
+
+      <div class="form-wrapper">
+        <form action="" id="form">
+
+          <div class="input-wrapper">
+            <input type="text" placeholder="First Name" class="get-input" id="fname" oninput="validateFirstName()">
+            <img src="images/icon-error.svg" alt="" class="error">
+          </div>
+          <span class="span-error">First name cannot be empty</span>
+
+          <div class="input-wrapper">
+
+            <input type="text" placeholder="Last Name" class="get-input"  id="lname" oninput="validateLastName()">
+            <img src="images/icon-error.svg" alt="" class="error-two">
+          </div>
+          <span class="span-error-second">Last name cannot be empty</span>
+
+          <div class="input-wrapper">
+            <input type="text" placeholder="Email Adress" class="get-input" id="email"
+            oninput="validateEmail()">
+            <img src="images/icon-error.svg" alt="" class="error-three">
+          </div>
+          <span class="span-error-third">Looks like this is not an email</span>
+
+          <div class="input-wrapper">
+            <input type="password" placeholder="Password" class="get-input" id="password" oninput="validatePassword()">
+            <img src="images/icon-error.svg" alt="" class="error-four">
+          </div>
+          <span class="span-error-fourth">6 or more characters required</span>
+
+          <button type="submit" >Claim your free trial</button>
+          <h4>By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span></h4>
+        </form>
+
+
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

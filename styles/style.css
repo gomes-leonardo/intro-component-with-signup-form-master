@@ -1,0 +1,311 @@
+:root{
+    --patern-font: 'Poppins', sans-serif;
+
+
+    --primary-red: hsl(0, 100%, 74%) ;
+    --primary-green: hsl(154, 59%, 51%);
+
+    --accent-blue: hsl(248, 32%, 49%);
+
+    --dark-blue: hsl(249, 10%, 26%) ;
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../images/bg-intro-desktop.png) hsl(0, 100%, 74%);
+    font-family: var(--patern-font);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    
+    margin: 100px auto;
+    
+
+    width: 1000px
+    
+}
+
+.txt-container{
+    color: #FFFF;
+    margin-top: 140px;
+    width: 450px;
+    
+}
+
+.txt-container h1{
+    line-height: 45px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.txt-container p{
+    font-size: 14px;
+    color: rgb(244, 238, 238);
+    line-height: 24px;
+}
+.try{
+    width: 480px;
+    background-color: var(--accent-blue);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--grayish-blue);
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 4px 0px 1px rgb(0 0 0 / 17%);
+    
+}
+
+.strong{
+    font-weight: bolder;
+    color: #FFFF;
+    cursor: pointer;
+}
+
+input{
+    width: 410px;
+    padding: 12px;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+    
+}
+
+input::placeholder{
+    font-weight: bold;
+    padding-left: 15px;
+
+    font-size: var(--patern-font);
+}
+
+input:focus{
+
+    font-weight: bold;
+    padding-left: 20px;
+    outline: none;
+}
+.form-wrapper{
+    width: 480px;
+    background-color: #FFFF;
+    padding: 35px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border-radius: 8px;
+    box-shadow: 0px 4px 0px 1px rgb(0 0 0 / 17%);
+}
+
+
+.input-wrapper{
+    display: flex;
+    width: 500px;
+    align-items: center;
+
+}
+
+
+
+button{
+
+    width: 410px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+
+    background-color: var(--primary-green);
+    text-transform: uppercase;
+    color: #FFFF;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 0px 1px rgb(0 0 0 / 17%);
+}
+
+button:hover{
+    background-color: hsl(154, 67%, 32%);
+    
+}
+
+.error{
+    align-self: center;
+    position: relative;
+    right: 32px;
+    bottom: 1px;
+
+    width: 20px;
+    
+}
+
+.error-two{
+    align-self: center;
+    position: relative;
+    right: 32px;
+    bottom: 1px;
+
+    width: 20px;
+    
+}
+
+.error-three{
+    align-self: center;
+    position: relative;
+    right: 32px;
+    bottom: 1px;
+
+    width: 20px;
+}
+
+.error-four{
+    align-self: center;
+    position: relative;
+    right: 32px;
+    bottom: 1px;
+
+    width: 20px;
+}
+
+.span-error{
+    font-size: 10px;
+    font-style: italic;
+    color: var(--primary-red);
+    float: right;
+
+    margin-bottom: 15px;
+    
+}
+
+.span-error-second , .span-error-third, .span-error-fourth{
+    font-size: 10px;
+    font-style: italic;
+    color: var(--primary-red);
+    float: right;
+
+    margin-bottom: 15px;
+}
+
+
+
+.error, .error-two, .error-three, .error-four, .span-error, .span-error-second, .span-error-third, .span-error-fourth{
+
+    opacity: -1;
+}
+
+
+
+h4{
+    color: var(--grayish-blue);
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+
+    width: 400px;
+    margin: auto;
+}
+
+#terms{
+    color: var(--primary-red);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 868px) {
+    
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+    }
+
+    .txt-container h1{
+        text-align: center;
+        width: 360px;
+        margin: auto;
+        margin-bottom: 30px;
+
+        font-size: 30px;
+    }
+
+    .txt-container p{
+        width: 280px;
+        margin: auto;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .txt-container{
+        text-align: center;
+    }
+
+
+
+}
+
+@media screen and (max-width:730px) {
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin-top: 0;
+    }
+
+    .txt-container h1{
+        text-align: center;
+        width: 360px;
+        margin: auto;
+        margin-bottom: 30px;
+
+        font-size: 30px;
+    }
+
+    .txt-container p{
+        width: 280px;
+        margin: auto;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .txt-container{
+        text-align: center;
+    }
+
+    .try{
+        width: 300px;
+        padding: 25px;
+    }
+
+    .form-wrapper{
+        width: 300px;
+        
+    }
+
+    input{
+        width: 235px;
+    }
+
+    button{
+        width: 240px;
+    }
+
+    h4{
+        width: 240px;
+        text-align: center;
+    }
+}
